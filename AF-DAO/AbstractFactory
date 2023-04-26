@@ -1,0 +1,9 @@
+// Abstrakcyjna klasa fabryki abstrakcyjnej
+public abstract class OracleDAOFactory {
+   public static OracleDAOFactory getDAOFactory(){
+      return new OracleDAOFactoryImpl();
+   }
+   public abstract CustomerDAO getCustomerDAO();
+   public abstract OrderDAO getOrderDAO();
+   public abstract ProductDAO getProductDAO();
+}

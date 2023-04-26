@@ -1,0 +1,15 @@
+// Konkretna implementacja fabryki abstrakcyjnej dla bazy danych Oracle
+public class OracleDAOFactoryImpl extends OracleDAOFactory {
+
+   public CustomerDAO getCustomerDAO() {
+      return new OracleCustomerDAO();
+   }
+
+   public OrderDAO getOrderDAO() {
+      return new OracleOrderDAO();
+   }
+
+   public ProductDAO getProductDAO() {
+      return new OracleProductDAO();
+   }
+}

@@ -1,0 +1,18 @@
+// Konkretna implementacja interfejsu DAO dla encji Customer
+public class OracleCustomerDAO implements CustomerDAO {
+   public List<Customer> getAllCustomers() {
+      // Implementacja zapytania SQL do pobrania wszystkich klientów
+   }
+   public Customer getCustomerById(int id) {
+      // Implementacja zapytania SQL do pobrania klienta o określonym identyfikatorze
+   }
+   public void updateCustomer(Customer customer) {
+      // Implementacja zapytania SQL do aktualizacji danych klienta
+   }
+   public void deleteCustomer(Customer customer) {
+      // Implementacja zapytania SQL do usunięcia klienta
+   }
+   public void createCustomer(Customer customer) {
+      // Implementacja zapytania SQL do dodania nowego klienta
+   }
+}
